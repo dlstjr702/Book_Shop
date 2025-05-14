@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+
+/************************************************************************************************************/
+/* 공통영역 */
+/************************************************************************************************************/
+.wrap{}
+
+.wrap .cm_inner{
+    width: 1200px;
+    margin:0 auto;
+}
+/************************************************************************************************************/
+
+
+
+/************************************************************************************************************/
+/* 헤더영역 */
+/************************************************************************************************************/
+.wrap header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+.wrap header .hd_wrap{}
+.wrap header .hd_ir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+}
+
+/************************************************************************************************************/
+/* 로고 */
+.wrap header .hd_ir .logo{}
+.wrap header .hd_ir .logo>a{
+    color:#000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/************************************************************************************************************/
+/* 메뉴 */
+.wrap header .hd_ir .gnb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+/************************************************************************************************************/
+/* 메인메뉴 */
+.wrap header .hd_ir .main_mnu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.wrap header .hd_ir .main_mnu >li{}
+.wrap header .hd_ir .main_mnu >li>a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/************************************************************************************************************/
+/* 로그인,장바구니 */
+.wrap header .hd_ir .hd_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.wrap header .hd_ir .hd_info>a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/************************************************************************************************************/
+
+
+/************************************************************************************************************/
+/* 푸터영역 */
+/************************************************************************************************************/
+/************************************************************************************************************/
+/* 푸터공통 */
+.wrap footer{
+    background-color: #ddd;;
+}
+.wrap footer .ft_wrap{}
+.wrap footer .ft_ir{
+    padding:20px 0;
+}
+
+/************************************************************************************************************/
+/* 푸터 - 카피라이트 */
+.wrap footer .ft_ir .copy{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/************************************************************************************************************/
+
+
+/************************************************************************************************************/
+/* 메인영역 */
+/************************************************************************************************************/
+/************************************************************************************************************/
+/* 메인 공통 */
+.wrap main{}
+
+
+/************************************************************************************************************/
+/* 메인 -  비주얼 */
+.wrap #ms_visual{
+    position: relative;
+}
+.wrap #ms_visual .img_box{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrap #ms_visual .img_box>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrap #ms_visual .sec_wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.36);
+}
+.wrap #ms_visual .sec_ir{}
+.wrap #ms_visual .sec_ir .txt_box{
+    color:#fff;
+}
+.wrap #ms_visual .sec_ir .txt_box >h2{
+    font-size: 52px;
+    font-weight: bold;
+}
+.wrap #ms_visual .sec_ir .txt_box >p{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+/************************************************************************************************************/
+/* 메인 -  서브컨테이너 */
+.wrap #sub_container{}
+.wrap #sub_container .sec_wrap{}
+.wrap #sub_container .sec_ir{
+    padding:120px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.wrap #sub_container .sec_ir .tit{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/************************************************************************************************************/
+
+
+/************************************************************************************************************/
+/* 서브영역 */
+/************************************************************************************************************/
+/************************************************************************************************************/
+/* 서브 -  서브탑 */
+.wrap #sub_top{
+    position: relative;
+}
+.wrap #sub_top .img_bx{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.wrap #sub_top .img_bx>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wrap #sub_top .sec_wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,.26);
+}
+.wrap #sub_top .sec_wrap .sec_ir{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
+.wrap #sub_top .sec_wrap .sec_ir .txt_bx{}
+.wrap #sub_top .sec_wrap .sec_ir .txt_bx >.tit{
+    color:#fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.wrap #sub_top .sec_wrap .sec_ir .txt_bx >.des{
+    color:#ddd;
+    font-size: 18px;
+}
+
+/************************************************************************************************************/
+/* 서브 -  공통 */
+.wrap #sub_cont{}
+.wrap #sub_cont .sub_wrap{}
+.wrap #sub_cont .sub_ir{
+    padding:120px 0;
+}
+
+
+/************************************************************************************************************/
+/* 서브 -  리스트(책리스트) */
+.wrap #shp_prd_list{}
+
+/* 헤더 */
+.wrap #shp_prd_list .hd{}
+
+/* 바디 */
+.wrap #shp_prd_list .bd{}
+.wrap #shp_prd_list .bd .prd_list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.wrap #shp_prd_list .bd .prd_list >li{}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:20px;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .prd_tit{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .prd_ath{
+    color:#888;
+    font-size: 15px;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .prd_des{
+    color:#777;
+    font-size: 14px;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .prd_prc{
+    width: 100%;
+    font-size: 15px;
+    text-align: right;
+}
+
+/* 푸터 */
+.wrap #shp_prd_list .ft{}
+
+/************************************************************************************************************/
