@@ -38,6 +38,9 @@
                                             <p class="prd_ath"><?php echo $book["author"]." | ".$book["releaseDate"]; ?></p>
                                             <p class="prd_des"><?php echo mb_substr($book["description"],0,90,'utf-8')."..."; ?></p>
                                             <p class="prd_prc"><?php echo $book["unitPrice"]; ?>원</p>
+                                            <div class="btn_bx">
+                                                <a href="./book_info.php?id=<?php echo $id; ?>">상세정보</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>

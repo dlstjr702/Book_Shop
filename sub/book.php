@@ -38,10 +38,23 @@
 
 
 
-
+// 글로벌변수처리
 function getAllBooks(){
     global $BookArray;
     return $BookArray;
+}
+
+
+//도서 아이디 배열 아이디 값가져오기
+function getBookById($id){
+    global $BookArray, $bookById;//전역변수처리
+    for($i=0; $i<count($BookArray); $i++){//배열의 요소갯수만큼반복
+        if(array_key_exists($id, $BookArray)){//BookArray배열안에 $id키값이 있는지 확인
+            $bookById= $BookArray[$id];
+            break;
+        }
+    }
+    return $bookById;
 }
 
 ?>

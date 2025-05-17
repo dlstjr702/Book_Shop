@@ -279,8 +279,140 @@
     font-size: 15px;
     text-align: right;
 }
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .btn_bx{
+    width: 100%;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .btn_bx>a{
+    max-width: 120px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: skyblue;
+    transition: 0.4s;
+}
+.wrap #shp_prd_list .bd .prd_list >li >.li_ir>.txt_bx .btn_bx>a:hover{
+    background-color: #ddd;
+    transition: 0.4s;
+}
 
 /* 푸터 */
 .wrap #shp_prd_list .ft{}
+
+
+
+
+/************************************************************************************************************/
+/* 서브 -  리스트(책뷰) */
+.wrap #shp_prd_view{}
+.wrap #shp_prd_view .prd_row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.wrap #shp_prd_view .prd_row .prd_col{
+    padding:20px 0;
+}
+.wrap #shp_prd_view .prd_row .prd_col .img_bx{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap #shp_prd_view .prd_row .prd_col .img_bx>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_tit{
+    font-size: 32px;
+    font-weight: bold;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_des{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_code{
+    font-size: 14px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_code>b{}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_code>.badge{
+    display: inline-block;
+    padding:5px 10px;
+    color:#fff;
+    background-color: red;
+    border-radius: 5px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_ath{
+    font-size: 14px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_date{
+    font-size: 14px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_ctg{
+    font-size: 14px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_uis{
+    font-size: 14px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .prd_prc{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .btn_bx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+    width: 100%;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .btn_bx .btn_ord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 135px;
+    width: 100%;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(82, 224, 57);
+    transition: 0.4s;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .btn_bx .btn_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 135px;
+    width: 100%;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: rgb(234, 162, 38);
+    transition: 0.4s;
+}
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .btn_bx .btn_ord:hover,
+.wrap #shp_prd_view .prd_row .prd_col .txt_bx .btn_bx .btn_list:hover{
+    background-color: #ddd;
+    transition: 0.4s;
+}
+
+
 
 /************************************************************************************************************/
