@@ -57,4 +57,18 @@ function getBookById($id){
     return $bookById;
 }
 
+
+//추가 도서 배열에 추가
+function addBook($bookId, $nbook){
+    global $BookArray;
+    $BookArray[$bookId]["name"] = $nbook["name"];
+    $BookArray[$bookId]["unitPrice"] = $nbook["unitPrice"];
+    $BookArray[$bookId]["author"] = $nbook["author"];
+    $BookArray[$bookId]["description"] = $nbook["description"];
+    $BookArray[$bookId]["category"] = $nbook["category"];
+    $BookArray[$bookId]["unitsInStock"] = $nbook["unitsInStock"];
+    $BookArray[$bookId]["releaseDate"] = $nbook["releaseDate"];
+    $BookArray[$bookId]["condition"] = $nbook["condition"];
+}
+
 ?>
