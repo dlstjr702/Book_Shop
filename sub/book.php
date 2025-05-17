@@ -35,4 +35,13 @@
     $BookArray["ISBN1236"]["unitsInStock"] = "1000";
     $BookArray["ISBN1236"]["releaseDate"] = "2023/07/10";
     $BookArray["ISBN1236"]["condition"] = "N";
+
+
+
+
+function getAllBooks(){
+    global $BookArray;
+    return $BookArray;
+}
+
 ?>

@@ -8,7 +8,9 @@
     <?php include("../inc/sub_top.html") ?>
     <!-- 서브탑 E -->
     
+    <!-- 책 데이터 S-->
     <?php include("./book.php") ?>
+    <!-- 책 데이터 E -->
 
     
     <!-- 서브컨텐츠 S -->
@@ -22,17 +24,20 @@
                         <div class="bd">
                             <ul class="prd_list">
                                 <?php
-                                    for($i = 0; $i < 3; $i++){
-                                        $id = "ISBN".(1234+$i);
+                                   $listOfBooks = getAllBooks();
+                                   for($i=0;$i<count($listOfBooks);$i++){
+                                    $id = key($listOfBooks);
+                                    $book = $listOfBooks[$id];
+                                    next($listOfBooks);
                                     
                                 ?>
                                 <li>
                                     <div class="li_ir">
                                         <div class="txt_bx">
-                                            <h3 class="prd_tit"><?php echo $BookArray[$id]["name"]; ?></h3>
-                                            <p class="prd_ath"><?php echo $BookArray[$id]["author"]." | ".$BookArray[$id]["releaseDate"]; ?></p>
-                                            <p class="prd_des"><?php echo mb_substr($BookArray[$id]["description"],0,90,'utf-8')."..."; ?></p>
-                                            <p class="prd_prc"><?php echo $BookArray[$id]["unitPrice"]; ?>원</p>
+                                            <h3 class="prd_tit"><?php echo $book["name"]; ?></h3>
+                                            <p class="prd_ath"><?php echo $book["author"]." | ".$book["releaseDate"]; ?></p>
+                                            <p class="prd_des"><?php echo mb_substr($book["description"],0,90,'utf-8')."..."; ?></p>
+                                            <p class="prd_prc"><?php echo $book["unitPrice"]; ?>원</p>
                                         </div>
                                     </div>
                                 </li>

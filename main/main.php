@@ -31,20 +31,9 @@
                         <div class="sec_ir">
                             <h3 class="tit"><?php echo $tagline ?></h3>
                             <?php
-                                $date = date("Y/m/d");
-                                $hour = date("H");
-                                $minute = date("i");
-                                $second = date("s");
-
-                                if($hour <12||$hour==24){
-                                    $am_pm = "AM";
-                                }else{
-                                    $am_pm = "PM";
-                                    $hour = $hour - 12;
-
-                                }
-                                $time = $hour.":".$minute.":".$second."".$am_pm;
-                                echo "현재 접속 일시 : ".$date."".$time;
+                                header("Refresh:5");
+                                date_default_timezone_set("Asia/SEoul");
+                                echo "현재 접속 일시 : ".date("Y년m월d일 H시i분s초 A");
                             ?>
                         </div>
                     </div>
