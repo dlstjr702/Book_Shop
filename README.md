@@ -1,5 +1,22 @@
 # 책 쇼핑몰 구현
-php를 활용한 도서 쇼핑몰 제작
+php학습을 하며 언어를 활용하여 도서 쇼핑몰 제작 하였습니다.
+
+/* INDEX */
+- php Setting
+- Variable, Constant, data_type, operator
+- Conditional Statement, Loop,
+- Array
+- Function
+- HTTP, GET, POST
+- FORM
+- File Upload
+- Validation
+- Exaption Handling
+- Session
+- Cookie
+- DataBase
+- Prouduct View, Register, Edit, Deleate
+- Login, Logout, Notice, Join
 
 
 /* 사용된 언어 */
