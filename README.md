@@ -36,5 +36,26 @@ php학습을 하며 언어를 활용하여 도서 쇼핑몰 제작 하였습니�
 - 함수학습후 적용 include나 global함수, 배열활용 도서 목록 출력
 - GET,POST,REQUEST방식을 알고 페이지 이동시 정보전송
 - 신규도서추가 페이지 작업(오류발생되어서 작업중)
+/++
+    (기존코드)
+    $newBook["name"] = $name;
+    $newBook["unitPrice"] = $unitPrice;
+    $newBook = $_POST["author"];   <<< 이부분이 잘못됨
+    $newBook["description"] = $description;
+    $newBook["category"] = $category;
+    $newBook["unitsInStock"] = $unitsInStock;
+    $newBook["releaseDate"] = $releaseDate;
+    $newBook["condition"] = $condition;
 
+   (수정코드)
+    $newBook["name"] = $name;
+    $newBook["unitPrice"] = $unitPrice;
+    $newBook["author"] = $author; <<< 수정된 코드
+    $newBook["description"] = $description;
+    $newBook["category"] = $category;
+    $newBook["unitsInStock"] = $unitsInStock;
+    $newBook["releaseDate"] = $releaseDate;
+    $newBook["condition"] = $condition;
+배열이 아닌 단순 문자열로 사용해서 오류남, 변수배열로 저장하고난뒤 오류해결됨
+++/
 
