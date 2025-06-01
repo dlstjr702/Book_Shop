@@ -34,11 +34,29 @@
                                   $unitsInStock = $_POST["unitsInStock"];
                                   $releaseDate = $_POST["releaseDate"];
                                   $condition = $_POST["condition"];
+                                  $condition = $_FILES["bookImage"]["name"];
+
+                                  $target_path = "resource/imgaes/";
+
+
+                                  $ext = pathinfo($filename, PATHINFO_EXTENSION);
+                                  $filename = $bookId.".".$ext;
+
+
+                                  if(move_uploaded_file($filename["bookImage"]["tmp_name"],$target_path.$filename)){
+                                    $handle = fopen("domain.dat","a");//파일열기
+                                    $book_info = "$bookId | $name | $unitPrice | $author | $description | $category | $unitsInStock | $releaseDate | $condition | $filename";
+                                    fwrite($handle,"\n".$book_info);
+                                    fclose($handle);
+                                    Header("Location:books.php");
+                                  }else{
+                                    echo "파일이 업로드되지 않았습니다. 다시 시동해주세요!";
+                                  }
 
 
                                   $newBook["name"] = $name;
                                   $newBook["unitPrice"] = $unitPrice;
-                                  $newBook = $_POST["author"];
+                                  $newBook["author"] = $author;
                                   $newBook["description"] = $description;
                                   $newBook["category"] = $category;
                                   $newBook["unitsInStock"] = $unitsInStock;

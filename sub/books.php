@@ -33,6 +33,9 @@
                                 ?>
                                 <li>
                                     <div class="li_ir">
+                                        <a href="processDownloadImage.php?file=<?php echo urlencode($book['filename']); ?>" class="img_bx">
+                                            <img src="../img/book/<?php echo $book["filename"]; ?>" style="width:100%" alt="">
+                                        </a>
                                         <div class="txt_bx">
                                             <h3 class="prd_tit"><?php echo $book["name"]; ?></h3>
                                             <p class="prd_ath"><?php echo $book["author"]." | ".$book["releaseDate"]; ?></p>

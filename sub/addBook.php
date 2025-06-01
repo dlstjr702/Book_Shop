@@ -138,6 +138,18 @@
                                     </dd>
                                 </dl>
                                 <!-- row E -->
+                                <!-- row(이미지) S -->
+                                <dl class="row">
+                                    <dt>
+                                        <label for="">이미지</label>
+                                    </dt>
+                                    <dd>
+                                        <div class="inp_bx">
+                                            <input type="file" name="bookImage" class="form-control">
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <!-- row E -->
                                 <!-- row(등록) S -->
                                 <dl class="row">
                                     <dt>

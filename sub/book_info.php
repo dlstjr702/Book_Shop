@@ -27,7 +27,9 @@
 
                         <div class="prd_row">
                             <div class="prd_col">
-                                <div class="img_bx"></div>
+                                <div class="img_bx">
+                                    <img src="../img/book/<?php echo $book['filename']; ?>" style="width:70%"  alt="">
+                                </div>
                             </div>
                             <div class="prd_col">
                                 <div class="txt_bx">
